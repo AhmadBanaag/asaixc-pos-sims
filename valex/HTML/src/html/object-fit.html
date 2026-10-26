@@ -1,0 +1,450 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Prism CSS -->
+<link rel="stylesheet" href="../assets/libs/prismjs/themes/prism-coy.min.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+            <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Object Fit", "subtitle": 'Elements'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Contain</div>
+                                <div class="prism-toggle">
+                                    <button class="ti-btn !py-1 !px-2 ti-btn-primary !font-[500] !text-[0.75rem]">Show Code<i class="ri-code-line ms-2 d-inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="object-contain border dark:border-defaultborder/10 !rounded-md"
+                                    alt="...">
+                                </div>
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">
+&lt;img src="../assets/images/media/media-28.jpg" class="object-contain border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;
+    </code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Cover</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="object-cover border dark:border-defaultborder/10 md:!rounded-md" alt="...">
+                                </div>
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+        class="object-cover border dark:border-defaultborder/10 md:!rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Fill</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="object-fill border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+   class="object-fill border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Scale Down</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="object-scale-down border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+     class="object-scale-down border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit None</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="object-none border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+    class="object-none border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Contain (SM - responsive)</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="sm:object-contain border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+    class="sm:object-contain border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Contain (MD - responsive)</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="md:object-contain border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                                
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+        class="md:object-contain border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Contain (LG - responsive)</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="lg:object-contain border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+        class="lg:object-contain border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Contain (XL - responsive)</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="xl:object-contain border dark:border-defaultborder/10 !rounded-md" alt="...">
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+        class="xl:object-contain border dark:border-defaultborder/10 !rounded-md" alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">Object Fit Contain (XXL - responsive)</div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <img src="../assets/images/media/media-28.jpg"
+                                    class="xxl:object-contain border dark:border-defaultborder/10 !rounded-md"
+                                    alt="...">
+                                </div>
+                                
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;img src="../assets/images/media/media-28.jpg"
+        class="xxl:object-contain border dark:border-defaultborder/10 !rounded-md"
+        alt="..."&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">
+                                    Object Fit Contain Video
+                                </div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <video src="../assets/video/1.mp4"
+                                    class="object-contain !rounded-md border dark:border-defaultborder/10"
+                                    autoplay loop muted></video>
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;video src="../assets/video/1.mp4"
+        class="object-contain !rounded-md border dark:border-defaultborder/10"
+        autoplay loop muted&gt;&lt;/video&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">
+                                    Object Fit Cover Video
+                                </div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <video src="../assets/video/1.mp4"
+                                    class="object-cover !rounded-md border dark:border-defaultborder/10"
+                                    autoplay loop muted></video>
+                                </div>
+                               
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;video src="../assets/video/1.mp4"
+        class="object-cover !rounded-md border dark:border-defaultborder/10"
+        autoplay loop muted&gt;&lt;/video&gt;
+    </code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">
+                                    Object Fit Fill Video
+                                </div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <video src="../assets/video/1.mp4"
+                                    class="object-fill !rounded-md border dark:border-defaultborder/10"
+                                    autoplay loop muted></video>
+                                </div>
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;video src="../assets/video/1.mp4"
+        class="object-fill !rounded-md border dark:border-defaultborder/10"
+        autoplay loop muted&gt;&lt;/video&gt;</code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">
+                                    Object Fit Scale Video
+                                </div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <video src="../assets/video/1.mp4"
+                                    class="object-scale-down !rounded-md border dark:border-defaultborder/10"
+                                    autoplay loop muted></video>
+                                </div>
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;video src="../assets/video/1.mp4"
+        class="object-scale-down !rounded-md border dark:border-defaultborder/10"
+        autoplay loop muted&gt;&lt;/video&gt;
+    </code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header flex justify-between">
+                                <div class="box-title">
+                                    Object Fit None Video
+                                </div>
+                                <div class="prism-toggle">
+                                    <button type="button" class="ti-btn !py-1 !px-2 ti-btn-primary !font-medium !text-[0.75rem]">Show
+                                        Code<i class="ri-code-line ms-2 inline-block align-middle"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="object-fit-container">
+                                    <video src="../assets/video/1.mp4"
+                                    class="object-none !rounded-md border dark:border-defaultborder/10"
+                                    autoplay loop muted></video>
+                                </div>
+                            </div>
+                            <div class="box-footer hidden !border-t-0">
+<!-- Prism Code -->
+<pre
+    class="language-html"><code class="language-html">&lt;video src="../assets/video/1.mp4"
+        class="object-none !rounded-md border dark:border-defaultborder/10"
+        autoplay loop muted&gt;&lt;/video&gt;
+    </code></pre>
+<!-- Prism Code -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Prism JS -->
+    <script src="../assets/libs/prismjs/prism.js"></script>
+    <script src="../assets/js/prism-custom.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

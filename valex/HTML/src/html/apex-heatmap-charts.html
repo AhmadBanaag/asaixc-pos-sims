@@ -1,0 +1,91 @@
+@SPK@include("partials/main-header.html")
+
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+        <!--APP-CONTENT START-->
+        <div class="content">
+            <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Apex Heatmap Charts", "subtitle": 'Apex Charts'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Basic Heatmap Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="heatmap-basic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Multi Series Heatmap Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="heatmap-multiseries"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Color Range Heatmap Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="heatmap-colorrange"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Heatmap Range Without Shades</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="heatmap-range"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Internal Apex Heatmap Charts JS -->
+    <script src="../assets/js/apexcharts-heatmap.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

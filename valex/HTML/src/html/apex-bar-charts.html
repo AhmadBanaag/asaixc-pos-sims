@@ -1,0 +1,150 @@
+@SPK@include("partials/main-header.html")
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+        <!--APP-CONTENT START-->
+        <div class="content">
+            <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Apex Bar Charts", "subtitle": 'Apex Charts'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Basic Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-basic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Grouped Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-group"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Stacked Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-stacked"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">100% Stacked Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Bar Chart With Negative Values</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-negative"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Bar Chart With Markers</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-markers"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Reversed Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-reversed"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Bar With Category DataLabels</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-categories"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Patterned Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-pattern"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Bar With Image Fill</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="bar-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Internal Apex Bar Charts JS -->
+    <script src="../assets/js/apexcharts-bar.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

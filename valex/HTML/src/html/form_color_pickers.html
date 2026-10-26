@@ -1,0 +1,94 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Prism CSS -->
+<link rel="stylesheet" href="../assets/libs/prismjs/themes/prism-coy.min.css">
+
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/classic.min.css">
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/monolith.min.css">
+<link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+            <!--APP-CONTENT START-->
+            <div class="content">
+                <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Color Pickers", "subtitle": 'Form Elements'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="col-span-12 lg:col-span-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Tailwind colorpicker </h5>
+                            </div>
+                            <div class="box-body">
+                                <input type="color" class="p-1 h-10 w-10 block bg-white border border-gray-200 cursor-pointer rounded-sm disabled:opacity-50 disabled:pointer-events-none dark:bg-bodybg dark:border-white/10" id="hs-color-input" value="#5a66f1" title="Choose your color">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title"> Color Picker </h5>
+                            </div>
+                            <div class="box-body">
+								<div class="">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <div class="theme-container"></div>
+                                            <div class="pickr-container text-center"></div>
+                                        </div>
+                                        <div>
+                                            <div class="theme-container1"></div>
+                                            <div class="pickr-container1 text-center"></div>
+                                        </div>
+                                        <div>
+                                            <div class="theme-container2"></div>
+                                            <div class="pickr-container2 text-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Prism JS -->
+    <script src="../assets/libs/prismjs/prism.js"></script>
+    <script src="../assets/js/prism-custom.js"></script>
+
+    <!-- Color Picker JS -->
+    <script src="../assets/js/color-picker.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

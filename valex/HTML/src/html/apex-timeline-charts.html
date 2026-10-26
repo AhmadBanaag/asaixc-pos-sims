@@ -1,0 +1,104 @@
+@SPK@include("partials/main-header.html")
+
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+        <!--APP-CONTENT START-->
+        <div class="content">
+            <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Apex Timeline Charts", "subtitle": 'Apex Charts'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Basic TImeline Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="timeline-basic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Multiple Colored TImeline Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="timeline-colors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Multi Series Timeline Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="timeline-multi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Advanced Timeline Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="timeline-advanced"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Timeline-Grouped Rows</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="timeline-grouped"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Used For Multiple Colored TImeline Chart -->
+    <script src="../assets/libs/moment/moment.js"></script>
+
+    <!-- Internal Apex Timeline Charts JS -->
+    <script src="../assets/js/apexcharts-timeline.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

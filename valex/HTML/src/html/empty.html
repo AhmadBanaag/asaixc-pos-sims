@@ -1,0 +1,41 @@
+@SPK@include("partials/main-header.html")
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+            <div class="main-content">
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Empty", "subtitle": 'Pages'})
+                <!-- Page Header Close -->
+              
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>
+

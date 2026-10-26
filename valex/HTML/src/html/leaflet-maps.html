@@ -1,0 +1,103 @@
+@SPK@include("partials/main-header.html")
+
+<!-- Leaflet Maps CSS -->
+<link rel="stylesheet" href="../assets/libs/leaflet/leaflet.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+           <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Leaflet Maps", "subtitle": 'Maps'})
+            <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Leaflet Map</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Map With Markers,Circles and Polygons</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="map1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Map With Popup</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="map-popup"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Map With Custom Icon</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="map-custom-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Interactive Choropleth Map</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="interactive-map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Leaflet Maps JS -->
+    <script src="../assets/libs/leaflet/leaflet.js"></script>
+    <script src="../assets/js/leaflet.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

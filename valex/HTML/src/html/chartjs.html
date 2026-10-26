@@ -1,0 +1,142 @@
+@SPK@include("partials/main-header.html")
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+           <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "ChatJs", "subtitle": 'Charts'})
+            <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Line Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-line" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Bar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-bar" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Pie Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-pie" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Doughnut Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-doughnut" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Mixed Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-mixed" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Polar Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-polar" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Radial Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-radar" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Scatter Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-scatter" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Chartjs Bubble Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <canvas id="chartjs-bubble" class="chartjs-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Chartjs Chart JS -->
+    <script src="../assets/libs/chart.js/chart.min.js"></script>
+
+    <!-- Imternal Chartjs JS -->
+    <script src="../assets/js/chartjs-charts.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

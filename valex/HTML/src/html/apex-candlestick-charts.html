@@ -1,0 +1,97 @@
+@SPK@include("partials/main-header.html")
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+        <!--APP-CONTENT START-->
+        <div class="content">
+            <div class="main-content">
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Apex Candlestick Charts", "subtitle": 'Apex Charts'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Basic Candlestick Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="candlestick-basic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Candlestick Synced With Brush Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="chart-candlestick"></div>
+                                <div id="chart-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Candlestick With Cateory X-axis</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="candlestick-categoryx"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Candlestick With Line Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="candlestick-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Used For Candlestick Synced With Brush Chart -->
+    <script src="../assets/js/apexcharts-candlestick-seriesdata.js"></script>
+
+    <!-- Used For Candlestick With Cateory X-axis Chart-->
+    <script src="../assets/js/apexcharts-dayjs.min.js"></script>
+
+    <!-- Internal Apex Candlestick Charts JS -->
+    <script src="../assets/js/apexcharts-candlestick.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

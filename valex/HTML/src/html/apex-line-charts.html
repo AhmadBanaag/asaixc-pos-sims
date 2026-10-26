@@ -1,0 +1,171 @@
+@SPK@include("partials/main-header.html")
+<link rel="stylesheet" href="../assets/libs/apexcharts/apexcharts.css">
+
+</head>
+
+<body>
+
+    @SPK@include("partials/switcher.html")
+    @SPK@include("partials/loader.html")
+    <div class="page">
+        @SPK@include("partials/header.html")
+
+        @SPK@include("partials/menu.html")
+        <!--APP-CONTENT START-->
+        <div class="content">
+            <div class="main-content">
+
+
+                <!-- Page Header -->
+                @SPK@include("partials/page-header.html", {"title": "Apex Line Charts", "subtitle": 'Apex Charts'})
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Basic Line Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="line-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Line Chart With Data Labels</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="line-chart-datalabels"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Zoomable Time Series</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="zoom-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Line With Annotations</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="annotation-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Brush Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="brush-chart1"></div>
+                                <div id="brush-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">StepLine Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="stepline-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Gradient Line Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="gradient-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Missing/Null Values Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="null-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Real Time Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="dynamic-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Dashed Line Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="dashed-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box custom-box">
+                            <div class="box-header">
+                                <div class="box-title">Syncing Charts</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="chart-line"></div>
+                                <div id="chart-line2"></div>
+                                <div id="chart-area"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        @SPK@include("partials/headersearch_modal.html")
+        @SPK@include("partials/footer.html")
+
+    </div>
+
+    @SPK@include("partials/commonjs.html")
+
+    @SPK@include("partials/custom_switcherjs.html")
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Used In Zoomable TIme Series Chart -->
+    <script src="../assets/js/dataseries.js"></script>
+
+    <!---Used In Annotations Chart-->
+    <script src="../assets/js/apexcharts-stock-prices.js"></script>
+
+    <!-- Internal Apex Line Charts JS -->
+    <script src="../assets/js/apexcharts-line.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

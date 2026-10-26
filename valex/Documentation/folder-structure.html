@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta data -->
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="A Tailwind CSS admin template is a pre-designed web page for an admin dashboard. Optimizing it for SEO includes using meta descriptions and ensuring it's responsive and fast-loading.">
+<meta name="author" content="Spruko Technologies Private Limited">
+<meta name="keywords" content="dashboard html,html css,css tailwind,html css in html,tailwind css,template dashboard,dashboard,html,admin panel template,dashboard tailwind,template html,tailwind dashboard,html css templates,admin,admin template html,html and css templates,html dashboard template,html css js templates,tailwindcomponents,tailwind admin template">
+<!-- Title -->
+<title>Valex - Tailwind CSS Admin Dashboard Template</title>
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<link href="assets/plugins/iconfonts/icons.css" rel="stylesheet">
+<!-- Custom Css -->
+<link href="assets/css/main.css" rel="stylesheet">
+<!---Internal  Prism css-->
+<link href="assets/plugins/prism/prism.css" rel="stylesheet">
+<link href="assets/plugins/treeview-prism/prism.css" rel="stylesheet">
+<link href="assets/plugins/treeview-prism/prism-treeview.css" rel="stylesheet">
+<link href="assets/css/themes/all-themes.css" rel="stylesheet">
+</head>
+
+<body class="theme-blush">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-blush">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #END# Page Loader -->
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+
+<!-- Sidebarover lay -->
+<div class="sidebar-overlay" data-toggle="sidebar"></div>
+
+<!-- #Top Bar -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info -->
+        <div class="admin-image"> <img src="assets/images/logo.png" alt="" > </div>
+        <!-- Menu -->
+        <div class="menu main-sidebar">
+			<ul class="list" id="documenter_nav">
+				<li class="nav-item"><a class="nav-link" href="intro.html"><i class="fe fe-github sidemenu-icon"></i><span class="sidemenu-label">Getting Started</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="faqs.html"><i class="fe fe-help-circle sidemenu-icon"></i><span class="sidemenu-label fw-bold mr-5">Faqs </span><i class="fa fa-star float-right sidemenu-icon-2 text-warning"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html"><i class="fe fe-airplay sidemenu-icon"></i><span class="sidemenu-label">Introduction</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="folder-structure.html"><i class="fe fe-folder sidemenu-icon"></i><span class="sidemenu-label">Folder structure</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="html-structure.html"><i class="fe fe-codepen sidemenu-icon"></i><span class="sidemenu-label">html-structure</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="switcher-styles.html"><i class="fe fe-layout sidemenu-icon"></i><span class="sidemenu-label">Switcher Styles</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="credits.html"><i class="fe fe-anchor sidemenu-icon"></i><span class="sidemenu-label">Credits</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="plugins.html"><i class="fe fe-droplet sidemenu-icon"></i><span class="sidemenu-label">Plugins</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="theme.html"><i class="fe fe-layers sidemenu-icon"></i><span class="sidemenu-label">Theme Style</span></a></li>
+			</ul>
+		</div>
+        <!-- #Menu -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+</section>
+
+<section class="content home">
+    <div class="container">
+        <div class="block-header mt-3">
+            <h4 class="mb-0">Folder Structure</h4>
+
+        </div>
+
+		<div class="row clearfix">
+			<div class="col-sm-12 col-lg-12">
+				<div class="card" id="folder_structure">
+					<div class="body pb-0">
+						<h6 class="mt-0">Folder Structure</h6>
+					</div>
+					<pre><code class="language-treeview tab-size-0">HTML
+						├── dist/
+						|   |-- assets/
+						|   |   |-- css/
+						|   |   |   |-- styles.css
+						|   |   |-- icon-fonts/
+						|   |   |   |--  bootstrap-icons/
+						|   |   |   |--  boxicons/
+						|   |   |   |--  feather/
+						|   |   |   |--  fontawesome/
+						|   |   |   |--  ionicons/
+						|   |   |   |--  line-awesome/
+						|   |   |   |--  materialsedignicons/
+						|   |   |   |--  pe7-icons/
+						|   |   |   |--  Remixicons/
+						|   |   |   |--  simple-line-icons/
+						|   |   |   |--  tabler-icons/
+						|   |   |   |--  themefy/
+						|   |   |   |--  typeicons.font/
+						|   |   |   |--  weather-icons-master/
+						|   |   |-- images/
+						|   |   |-- js/
+						|   |   |-- libs/
+						|   |   |-- video/
+						|   |-- html/
+						├── src/
+						|   |-- assets/
+						|   |   |-- icon-fonts/
+						|   |   |   |--  bootstrap-icons/
+						|   |   |   |--  boxicons/
+						|   |   |   |--  feather/
+						|   |   |   |--  fontawesome/
+						|   |   |   |--  ionicons/
+						|   |   |   |--  line-awesome/
+						|   |   |   |--  materialsedignicons/
+						|   |   |   |--  pe7-icons/
+						|   |   |   |--  Remixicons/
+						|   |   |   |--  simple-line-icons/
+						|   |   |   |--  tabler-icons/
+						|   |   |   |--  themefy/
+						|   |   |   |--  typeicons.font/
+						|   |   |   |--  weather-icons-master/
+						|   |   |-- images/
+						|   |   |-- js/
+						|   |   |-- scss/
+						|   |   |   |-- custom/
+						|   |   |   |-- layout/
+						|   |   |   |-- pages/
+						|   |   |   |-- plugins/
+						|   |   |   |-- switcher/
+						|   |   |   |-- tailwind/
+						|   |   |   |-- _icons.scss
+						|   |   |   |-- _variables.scss
+						|   |   |   |-- styles.scss
+						|   |-- html/
+						|   |   |-- partials/
+						|   |   |   |-- auth-js.html
+						|   |   |   |-- commonjs.html
+						|   |   |   |-- custom_switcherjs.html
+						|   |   |   |-- footer.html
+						|   |   |   |-- header.html
+						|   |   |   |-- headersearch_modal.html
+						|   |   |   |-- loader.html
+						|   |   |   |-- main-header.html
+						|   |   |   |-- main-header2.html
+						|   |   |   |-- menu.html
+						|   |   |   |-- page-header.html
+						|   |   |   |-- switcher.html
+						├── gulpfile.js
+						├── package-lock.json
+						├── package.json
+						├── postcss.config.json
+						├── tailwind.config.json
+					</code></pre>
+				</div>
+				<div class="card">
+					<div class="body pb-0">
+						<h5 class="mt-0">Folders Description</h5>
+					</div>
+					<div class="pt-4 pb-3">
+					<ul>
+						<li class="mb-1">
+						   <code>Valex - Tailwind CSS Admin Dashboard Template /</code> : Root template folder contain all html, js, css, scss, images
+						   and other files.
+						</li>
+						<li>
+							<ul class="folder-structure">
+								<li>
+									<code>assets/</code> : Folder contain all the Valex Template assets which has css, js, scss, and images.
+								</li>
+								<li class="list">
+									<ul class="sub-structure">
+										<li>
+											<code>css/</code>: Folder contain assets which has complete styles.
+										</li>
+										<li>
+											<ul class="sub-structure">
+												<li><code>styles.css</code> : Main style sheet for template</li>
+											</ul>
+										</li>
+										<li class="list">
+											<code>iconfonts/</code>: Folder contain all types of icons which is used in this template.
+										</li>
+										<li class="list">
+											<code>img/</code> : Template images.
+										</li>
+										<li class="list">
+											<code>js/</code> : Folder contain all the template pages js files.
+										</li>
+										<li class="list">
+											<code>scss/</code> : Folder contain all pages scss files and all plugins scss files also included.
+										</li>
+									</ul>
+								</li>
+								<li>
+									<li class="list mt-3 mb-3"><code>html</code> : All HTML Pages.</li>
+									<li>
+										<ul>
+											<li class="list">
+												<code>Partials/</code>:
+												<p class="mt-2"> 1. This folder have all common html files which we commonly used in all html pages. If you want to add content which you need in all html pages you just create new file and add content to that. No need to add that whole content to every page, you just add that link into all html pages.</p>
+												<p>2. Import that created file link into all html pages with <code>  <!-- include sample.html"--></code></p>
+											</li>
+										</ul>
+										<div class="card section bg-primary-transparent">
+											<div class="body">
+												<p class="mb-0">
+													<span class="text-primary">Note:</span> These files are used for only src folder not for dist folder users.
+												</p>
+										</div>
+									</li>
+								</li>
+							</ul>
+						</li>
+						<li class="list mt-3 mb-3"><code>esbuild.config.js</code> : esbuild.config js file..</li>
+						<li class="list mt-3 mb-3"><code>package.json</code> : package json file.</li>
+						<li>
+					<div class="card section bg-primary-transparent">
+						<div class="body">
+							<p class="mb-0">
+								<span class="text-primary">Note:</span> When you run <code>gulp</code> command libs files are generated in dist folder and  those files wont included in src folder.
+							</p>
+						</div>
+					</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer opened -->
+	<div class="main-footer ht-40">
+		<div class="pd-t-0-f ht-100p">
+			<span>Copyright © <span id="year">2024</span> <a href="#">Valex</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a href="#"> Spruko </a> All rights reserved.</span>
+
+		</div>
+	</div>
+	<!-- Footer closed -->
+</section>
+
+<div class="color-bg">
+	<div class="sidebar__toggle" data-toggle="sidebar">
+		<a class="open-toggle" href="javascript:void(0);"><i class="fe fe-menu"></i></a>
+	</div>
+	<ul class="nav navbar-nav">
+	  	<li class="nav-item mr-8"><a class="btn btn-primary btn-header d-sm-block d-none" href="https://1.envato.market/MGEaN" target="_blank"><i class="icon-bag3"></i> Portfolio</a></li>
+		<li class="nav-item mr-8"><a class="btn btn-success text-white btn-header" href=" https://support.spruko.com/" target="_blank"><i class="icon-help2"></i>Support Policy</a></li>
+	  	<li class="nav-item"><a class="btn btn-danger text-white mr-3 btn-header" href="https://spruko.com/licenses" target="_blank"><i class="icon-bag3"></i> Licenses</a></li>
+	</ul>
+</div>
+
+<!-- Jquery Core Js -->
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- morphing search Js -->
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+<!-- <script src="assets/bundles/morphingscripts.bundle.js"></script>morphing search page js -->
+
+<!-- Internal Prism js-->
+<script src="assets/plugins/prism/prism.js"></script>
+
+<!-- Treeview js-->
+<script src="assets/plugins/treeview-prism/prism.js"></script>
+<script src="assets/plugins/treeview-prism/prism-treeview.js"></script>
+
+<!-- Perfectscroll js-->
+<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+<!-- Custom js-->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/menuspy.min.js.js"></script>
+
+<script>
+    var elm = document.querySelector('#main-menu');
+    var ms = new MenuSpy(elm);
+</script>
+
+</body>
+</html>
